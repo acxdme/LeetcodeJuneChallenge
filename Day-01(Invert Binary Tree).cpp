@@ -1,6 +1,6 @@
 /*
 Time complexity : O(n) 
-Space complexity : O(n)  Space if required for recursion stack
+Space complexity : O(n)  Space is required for recursion stack
 */
 
 /**
