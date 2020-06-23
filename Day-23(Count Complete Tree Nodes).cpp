@@ -1,0 +1,30 @@
+/*
+Time complexity : O(n)
+Space complexity :O(1)
+My Approach : Traverse the Tree and increase the count when a node occurs , base case if when the node is null/leaf node.
+*/
+
+
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    int count=0;
+    int countNodes(TreeNode* root) {
+        if(root==NULL)
+            return 0;
+        count++;
+        countNodes(root->left);
+        countNodes(root->right);     
+    return count;    
+    }
+};
