@@ -25,3 +25,6 @@ public:
         return answer;
     }
 };
+/*
+Other approaches are 1) Use of hashmap + Linear Traverse  2) Sorting + Linear Traverse 
+*/
